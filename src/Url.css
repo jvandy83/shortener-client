@@ -1,0 +1,54 @@
+.form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 8rem 0;
+	margin: 10rem;
+	border-radius: 7px;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+	background: lightblue;
+}
+
+.form-input-container:not(:last-child) {
+	padding: 1rem 0;
+}
+
+.form-input {
+	outline: none;
+	width: 100%;
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	margin: 1rem 0;
+}
+
+.form-button {
+	margin: auto;
+	width: 80%;
+	padding: 0.4rem 0;
+	border: none;
+	border-radius: 3px;
+	background: lightcoral;
+	color: white;
+	font-weight: 800;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.shortened-urls {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2rem;
+}
+
+.message {
+	font-size: 0.75rem;
+}
+
+.error {
+	color: rgb(170, 85, 85);
+}
