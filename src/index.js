@@ -5,21 +5,17 @@ import App from './App';
 
 import UrlForm from './Urls';
 
-import { Router as BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import { createBrowserHistory } from 'history';
-
-const newHistory = createBrowserHistory();
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
-	<BrowserRouter history={newHistory}>
+	<Router>
 		<React.StrictMode>
 			<Switch>
 				<Route exact path='/' component={App} />
 				<Route path='/urls' component={UrlForm} />
 			</Switch>
 		</React.StrictMode>
-	</BrowserRouter>,
+	</Router>,
 	document.getElementById('root'),
 );
 
